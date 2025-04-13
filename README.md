@@ -1,3 +1,6 @@
+> [!NOTE]
+> All the stuff in here aren't tested yet. When this box goes away, keep reading. Otherwise, go back. You will regret your decision if you don't.
+
 <h1 align="center"><img src='https://i.imgur.com/HPCj1fT.png' height='100'><br>dotfiles</br></h1>
 <p align="center">some dotfiles for my friend, omori style.<br>focus mainly on intuitiveness, because I am dumb myself.</br></p>
 
