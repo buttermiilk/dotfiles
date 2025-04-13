@@ -31,16 +31,16 @@ white = '#FFFFFF'
 
 [window]
 title = "Alacritty"
-class = { instance = "Alacritty", general = "Alacritty"}
+class = { instance = "Alacritty", general = "Alacritty" }
 padding = { x = 15, y = 15 }
 
 [font]
-normal = { family = "JetBrains Mono", style = "Regular"}
+normal = { family = "JetBrains Mono", style = "Regular" }
 
 [bell]
 animation = "Linear"
 duration = 400
 
 [cursor]
-style = { shape="Beam", blinking="On" }
-vi_mode_style = { shape="Beam", blinking="On" }
+style = { shape = "Beam", blinking = "On" }
+vi_mode_style = { shape = "Beam", blinking = "On" }
