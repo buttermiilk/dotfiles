@@ -19,9 +19,23 @@ Yeah I have friends. One of them asked me to get the "thigh-high socks on, cat e
 
 There was no good and usable dotfiles for that, and because he wants it to be small and all, the choice would definitely be i3wm. The OMORI dotfiles I found was Hyprland, and it was broken as hell. So here we are.
 
+## Side note
+> [!WARNING]
+> Try to type the command manually into the terminal instead of copy paste them directly to the terminal unless you understand what is/are the purpose of it. If you choose to ignore this, you may please use the combination keybind `CTRL + SHIFT + V` to paste them into the terminal and hit `ENTER` as usual.
+
 ## Setup
-Warning, very unusable. Customizable though, so do whatever you want with these files. If you still want to use this anyway, make sure to move the font in global. Create if you haven't:
+Warning, very unusable. Customizable though, so do whatever you want with these files. If you still want to use this anyway, make sure to update the your distribution first before process to any further steps:
 ```bash
+# Do a quick Google Search on how to update packages from your current distribution
+# if you don't know how to do it yet. It'll take less than 3 seconds for this.
+sudo pacman -Syu
+```
+Then, make sure to move the font in global. Create if you haven't:
+```bash
+# Check for existing 'fonts/' directory
+ls -la --color=auto /usr/local/share/
+
+# Create the 'fonts/' directory if you don't see it, else ignore this line
 mkdir -p /usr/local/share/fonts
 ```
 Then refresh your font cache.
