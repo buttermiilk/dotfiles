@@ -35,7 +35,7 @@ class = { instance = "Alacritty", general = "Alacritty" }
 padding = { x = 15, y = 15 }
 
 [font]
-normal = { family = "JetBrains Mono", style = "Regular" }
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 
 [bell]
 animation = "Linear"

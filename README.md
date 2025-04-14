@@ -49,12 +49,13 @@ sudo pacman -Syu \
   alacritty feh xorg-xinit xorg \
   ttf-font-awesome noto-fonts \
   maim network-manager-applet blueman \
-  papirus-icon-theme zsh
+  papirus-icon-theme zsh \
+  ttf-jetbrains-mono-nerd
 ```
 And in AUR:
 ```bash
-yay -S ttf-jetbrains-mono polybar-git \
-  adapta-gtk-theme papirus-folders-git
+yay -S polybar-git adapta-gtk-theme \
+  papirus-folders-git
 ```
 Also grab [`oh-my-zsh`](https://github.com/ohmyzsh/ohmyzsh) to have that terminal theme. Don't be lazy and try to do this later - the installation moves your old `.zshrc` away.
 ```bash
