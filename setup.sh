@@ -25,7 +25,7 @@ yay -S polybar-git adapta-gtk-theme \
   papirus-folders-git
 
 # Get oh-my-zsh
-sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
+sh -c "$(curl -fsSL https://install.ohmyz.sh/)" "" --unattended
 
 # Back up current dots
 sudo mv ~/.config ~/.config-backup
@@ -40,7 +40,6 @@ sudo mkdir -p /usr/local/share/fonts
 sudo cp ./OMORI_GAME.ttf /usr/local/share/fonts
 fc-cache
 cp -rf . ..
-sudo chsh -s "$(which zsh)"
 
 # Clean up trash
 cd ..
@@ -57,4 +56,5 @@ if [[ "$answer" != 'y' ]]; then
   exit 0
 fi
 
+sudo chsh -s "$(which zsh)"
 sudo reboot
