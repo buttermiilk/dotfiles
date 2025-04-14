@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set wallpaper
-feh --bg-scale ~/.config/background/whitespace.jpg
+feh --bg-scale ~/.config/background/omori-light.png
 
 # Start compositor
 picom &
