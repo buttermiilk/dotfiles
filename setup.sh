@@ -28,22 +28,23 @@ yay -S polybar-git adapta-gtk-theme \
 sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
 
 # Back up current dots
-mv ~/.config ~/.config-backup
+sudo mv ~/.config ~/.config-backup
 
 # Clone this repo
 git clone https://github.com/buttermiilk/dotfiles.git ./miilk-dotfiles
 
 # cd in and do the work
 cd ./miilk-dotfiles
-mkdir -p /usr/local/share/fonts
-cp ./OMORI_GAME.ttf /usr/local/share/fonts
+rm -rf setup.sh
+sudo mkdir -p /usr/local/share/fonts
+sudo cp ./OMORI_GAME.ttf /usr/local/share/fonts
 fc-cache
 cp -rf . ..
-chsh -s $(which zsh)
+sudo chsh -s "$(which zsh)"
 
 # Clean up trash
 cd ..
-rm -rf .git README.md 
+rm -rf .git README.md miilk-dotfiles
 
 # Prompt for reboot
 echo ""
