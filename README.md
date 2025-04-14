@@ -6,10 +6,10 @@
 
 <div align="center">
 
-<a href="https://github.com/buttermiilk/dotfiles/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
-<a href="https://github.com/buttermiilk/dotfiles"><img src="https://img.shields.io/github/stars/buttermiilk/dotfiles.svg" alt="GitHub stars"></a>
-<a href="https://github.com/buttermiilk/dotfiles/issues"><img src="https://img.shields.io/github/issues/buttermiilk/dotfiles.svg" alt="GitHub issues"></a>
-<a href="https://github.com/buttermiilk/dotfiles/actions"><img src="https://img.shields.io/github/actions/workflow/status/buttermiilk/dotfiles/ci.yml?branch=main" alt="Build Status"></a>
+<a href="https://github.com/buttermiilk/dotfiles/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge" alt="License"></a>
+<a href="https://github.com/buttermiilk/dotfiles"><img src="https://img.shields.io/github/stars/buttermiilk/dotfiles.svg?style=for-the-badge" alt="GitHub stars"></a>
+<a href="https://github.com/buttermiilk/dotfiles/issues"><img src="https://img.shields.io/github/issues/buttermiilk/dotfiles.svg?style=for-the-badge" alt="GitHub issues"></a>
+<a href="https://github.com/buttermiilk/dotfiles"><img src="https://img.shields.io/github/repo-size/buttermiilk/dotfiles.svg?style=for-the-badge" alt="Repo size"></a>
 
 </div>
 
