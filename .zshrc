@@ -1,4 +1,4 @@
-ZSH_THEME = candy
+ZSH_THEME = "candy"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

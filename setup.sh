@@ -14,7 +14,7 @@ if ! command -v yay &> /dev/null; then
 fi
 
 # Install required stuff
-sudo pacman -Syu \
+sudo pacman -Syu --needed \
   i3-wm i3status dunst picom rofi \
   alacritty feh xorg-xinit xorg \
   ttf-font-awesome noto-fonts \
@@ -51,10 +51,10 @@ echo ""
 echo "Done. This will need a reboot, after reboot log into tty and do 'startx'."
 echo "If for some reason you need to tweak something, answer 'n'. Otherwise, do 'y'."
 read -p "Reboot? (y/n)" answer
-if [["$answer" != 'y']]; then
+if [[ "$answer" != 'y' ]]; then
   echo ""
   echo "Make sure to reboot later."
-  exit 1
+  exit 0
 fi
 
 sudo reboot
