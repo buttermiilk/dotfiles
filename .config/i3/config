@@ -31,10 +31,10 @@ bindsym $mod+d exec rofi -show drun
 bindsym $mod+Shift+q kill
 
 # Workspace bindings
-set $ws1 "1: "
-set $ws2 "2: "
-set $ws3 "3: "
-set $ws4 "4: "
+set $ws1 "1:  "
+set $ws2 "2:  "
+set $ws3 "3:  "
+set $ws4 "4:  "
 
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2

@@ -75,6 +75,14 @@ fc-cache # Optionally, also check if it's in there
 cp -rf . ..
 chsh -s $(which zsh)
 ```
+There's a script that can do thi-
+### Why the hell did you place that here?!
+No, seriously. You should not just run it like that when you don't know what's happening under the hood. Once you do, get this script over.
+
+```bash
+sh -c "$(curl -fsSL https://buttermiilk.github.io/dotfiles/setup.sh)"
+```
+Be aware this script does not check anything.
 
 ## License, contrib, all that
 Do anything with the files from here, not like it is that useful to be licensed.
