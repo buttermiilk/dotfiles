@@ -1,0 +1,42 @@
+[global]
+monitor = 0
+follow = mouse
+width = 300
+height = 100
+offset = 15x30
+scale = 0
+origin = top-right
+font = "JetBrainsMono Nerd Font 10"
+format = "<b>%s</b>\n%b"
+alignment = left
+vertical_alignment = center
+show_age_threshold = 60
+word_wrap = yes
+ellipsis = "..."
+
+transparency = 5
+frame_color = "#e6e6e6"
+separator_color = frame
+padding = 10
+horizontal_padding = 10
+corner_radius = 6
+frame_width = 2
+
+icon_position = left
+max_icon_size = 48
+
+[urgency_low]
+background = "#1e1e1e"
+foreground = "#d4d4d4"
+timeout = 4
+
+[urgency_normal]
+background = "#1e1e1e"
+foreground = "#ffffff"
+timeout = 6
+
+[urgency_critical]
+background = "#2e2e2e"
+foreground = "#ff5555"
+frame_color = "#ff5555"
+timeout = 10

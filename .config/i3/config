@@ -50,5 +50,8 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exit
 
+# Toggle themes
+bindsym $mod+Shift+t exec ~/.config/i3/scripts/toggle-theme.sh
+
 # Autostart script
 exec_always --no-startup-id $config_dir/scripts/autostart.sh
