@@ -14,7 +14,7 @@ if ! command -v yay &> /dev/null; then
 fi
 
 # Install required stuff
-sudo pacman -Syu \
+sudo pacman -Syu --needed \
   i3-wm i3status dunst picom rofi \
   alacritty feh xorg-xinit xorg \
   ttf-font-awesome noto-fonts \
@@ -25,35 +25,36 @@ yay -S polybar-git adapta-gtk-theme \
   papirus-folders-git
 
 # Get oh-my-zsh
-sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
+sh -c "$(curl -fsSL https://install.ohmyz.sh/)" "" --unattended
 
 # Back up current dots
-mv ~/.config ~/.config-backup
+sudo mv ~/.config ~/.config-backup
 
 # Clone this repo
 git clone https://github.com/buttermiilk/dotfiles.git ./miilk-dotfiles
 
 # cd in and do the work
 cd ./miilk-dotfiles
-mkdir -p /usr/local/share/fonts
-cp ./OMORI_GAME.ttf /usr/local/share/fonts
+rm -rf setup.sh
+sudo mkdir -p /usr/local/share/fonts
+sudo cp ./OMORI_GAME.ttf /usr/local/share/fonts
 fc-cache
 cp -rf . ..
-chsh -s $(which zsh)
 
 # Clean up trash
 cd ..
-rm -rf .git README.md 
+rm -rf .git README.md miilk-dotfiles
 
 # Prompt for reboot
 echo ""
 echo "Done. This will need a reboot, after reboot log into tty and do 'startx'."
 echo "If for some reason you need to tweak something, answer 'n'. Otherwise, do 'y'."
 read -p "Reboot? (y/n)" answer
-if [["$answer" != 'y']]; then
+if [[ "$answer" != 'y' ]]; then
   echo ""
   echo "Make sure to reboot later."
-  exit 1
+  exit 0
 fi
 
+sudo chsh -s "$(which zsh)"
 sudo reboot
