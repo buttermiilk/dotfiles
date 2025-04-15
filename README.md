@@ -26,7 +26,7 @@ There was no good and usable dotfiles for that, and because he wants it to be sm
 Warning, very unusable. Customizable though, so do whatever you want with these files. If you still want to use this anyway, make sure to move the font in global. Create if you haven't:
 ```bash
 # -p: If it already exists, it just exits silently and leaves it alone
-mkdir -p /usr/local/share/fonts
+sudo mkdir -p /usr/local/share/fonts
 ```
 Then refresh your font cache.
 ```bash
@@ -45,12 +45,11 @@ rm -rf yay-bin
 Packages are quite minimal.
 ```bash
 sudo pacman -Syu \
-  i3-wm i3status dunst picom rofi \
-  alacritty feh xorg-xinit xorg \
+  i3-wm dunst picom rofi alacritty \
+  zsh feh xorg-xinit xorg \
   ttf-font-awesome noto-fonts \
   maim network-manager-applet blueman \
-  papirus-icon-theme zsh \
-  ttf-jetbrains-mono-nerd
+  papirus-icon-theme ttf-jetbrains-mono-nerd
 ```
 And in AUR:
 ```bash
@@ -70,10 +69,10 @@ Before proceeding, **back up your current dotfiles**. Then, when you're ready, `
 Tweak the commands as you will.
 ```bash
 cd miilk-dotfiles
-mv ./OMORI_GAME.ttf /usr/local/share/fonts # Or use cp, safer
+sudo mv ./OMORI_GAME.ttf /usr/local/share/fonts # Or use cp, safer
 fc-cache # Optionally, also check if it's in there
 cp -rf . ..
-chsh -s $(which zsh)
+chsh -s "$(which zsh)"
 ```
 There's a script that can do thi-
 ### Why the hell did you place that here?!
