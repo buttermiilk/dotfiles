@@ -14,6 +14,16 @@
 </div>
 
 ---
+## Preview
+<details>
+<summary>Desktop</summary>
+<img src=https://i.imgur.com/l9enhaV.png>
+</details>
+<details>
+<summary>Some terminal/editor windows</summary>
+<img src=https://i.imgur.com/q2kB3PA.png>
+</details>
+
 ## Information
 Yeah I have friends. One of them asked me to get the "thigh-high socks on, cat ears, maid outfit" Linux distro on their machine so they can do more things with their computer. They liked OMORI, so I had to find dotfiles matching that. 
 
@@ -42,13 +52,13 @@ makepkg -si
 cd ..
 rm -rf yay-bin
 ```
-Packages are quite minimal.
+Packages are quite minimal. However, if you're lazy typing all the packages name yourself, there's a script in the root folder to help you with that. Be aware if `yay` would build anything like `polybar` from its git repo, that will take some time to finish.
 ```bash
 sudo pacman -Syu \
   i3-wm dunst picom rofi alacritty \
   zsh feh xorg-xinit xorg \
   ttf-font-awesome noto-fonts \
-  maim network-manager-applet blueman \
+  flameshot network-manager-applet blueman \
   papirus-icon-theme ttf-jetbrains-mono-nerd
 ```
 And in AUR:
@@ -74,14 +84,6 @@ fc-cache # Optionally, also check if it's in there
 cp -rf . ..
 chsh -s "$(which zsh)"
 ```
-There's a script that can do thi-
-### Why the hell did you place that here?!
-No, seriously. You should not just run it like that when you don't know what's happening under the hood. Once you do, get this script over.
-
-```bash
-sh -c "$(curl -fsSL https://buttermiilk.github.io/dotfiles/setup.sh)"
-```
-Be aware this script does not check anything.
 
 ## License, contrib, all that
 Do anything with the files from here, not like it is that useful to be licensed.

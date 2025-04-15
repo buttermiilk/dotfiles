@@ -1,9 +1,7 @@
 #!/bin/bash
 # Supposed to be ran on a clean Arch system.
-# This does not check whether you have things installed or not or if you're in the right directory, so if this fails, it's your fault for not reading the README first.
-# Please run this in tty, not your wm/de. Shut all wm/de related stuff down before running.
 
-# The only check of this whole script
+# Check if yay is present, if not just get the prebuilt binary
 if ! command -v yay &> /dev/null; then
   echo "'yay' is not installed. Installing binary build."
   git clone https://aur.archlinux.org/yay-bin.git
@@ -27,34 +25,6 @@ yay -S polybar-git adapta-gtk-theme \
 # Get oh-my-zsh
 sh -c "$(curl -fsSL https://install.ohmyz.sh/)" "" --unattended
 
-# Back up current dots
-sudo mv ~/.config ~/.config-backup
-
-# Clone this repo
-git clone https://github.com/buttermiilk/dotfiles.git ./miilk-dotfiles
-
-# cd in and do the work
-cd ./miilk-dotfiles
-rm -rf setup.sh
-sudo mkdir -p /usr/local/share/fonts
-sudo cp ./OMORI_GAME.ttf /usr/local/share/fonts
-fc-cache
-cp -rf . ..
-
-# Clean up trash
-cd ..
-rm -rf .git README.md miilk-dotfiles
-
-# Prompt for reboot
+# Finish
 echo ""
-echo "Done. This will need a reboot, after reboot log into tty and do 'startx'."
-echo "If for some reason you need to tweak something, answer 'n'. Otherwise, do 'y'."
-read -p "Reboot? (y/n) " answer
-if [[ "$answer" != 'y' ]]; then
-  echo ""
-  echo "Make sure to reboot later."
-  exit 0
-fi
-
-sudo chsh -s "$(which zsh)"
-sudo reboot
+echo "Installation OK"

@@ -6,8 +6,8 @@ include $config_dir/theme/colors.conf
 font pango:JetBrainsMono Nerd Font 10
 
 # Gaps
-gaps inner 10
-gaps outer 15
+gaps inner 5
+gaps outer 5
 
 # Window borders
 hide_edge_borders smart
@@ -31,6 +31,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+Shift+q kill
 bindsym $mod+e exec thunar
+bindsym $mod+Shift+s exec flameshot
 
 # Workspace bindings
 set $ws1 "1:  "
