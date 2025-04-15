@@ -11,16 +11,17 @@ gaps outer 15
 
 # Window borders
 hide_edge_borders smart
-new_window pixel 2
-new_float pixel 2
+# TODO: check these in docs
+# new_window pixel 2
+# new_float pixel 2
 
 # Theme colors
 set $bg_focus "#f8f8f2"
 set $bg_normal "#f8f8f2"
 set $text_focus "#000000"
 set $text_normal "#b0b0b0"
-client.focused          $bg_focus $bg_focus $text_focus
-client.unfocused        $bg_normal $bg_normal $text_normal
+client.focused    $bg_focus $bg_focus $text_focus
+client.unfocused  $bg_normal $bg_normal $text_normal
 
 # Set mod key
 set $mod Mod4
@@ -29,6 +30,7 @@ set $mod Mod4
 bindsym $mod+Return exec alacritty
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+Shift+q kill
+bindsym $mod+e exec thunar
 
 # Workspace bindings
 set $ws1 "1:  "
@@ -49,9 +51,6 @@ bindsym $mod+f fullscreen toggle
 # Restart & Exit
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exit
-
-# Toggle themes
-bindsym $mod+Shift+t exec ~/.config/i3/scripts/toggle-theme.sh
 
 # Autostart script
 exec_always --no-startup-id $config_dir/scripts/autostart.sh

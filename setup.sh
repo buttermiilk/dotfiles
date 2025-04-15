@@ -19,7 +19,7 @@ sudo pacman -Syu --needed \
   alacritty feh xorg-xinit xorg \
   ttf-font-awesome noto-fonts \
   maim network-manager-applet blueman \
-  papirus-icon-theme zsh \
+  papirus-icon-theme zsh thunar \
   ttf-jetbrains-mono-nerd git
 yay -S polybar-git adapta-gtk-theme \
   papirus-folders-git
@@ -49,7 +49,7 @@ rm -rf .git README.md miilk-dotfiles
 echo ""
 echo "Done. This will need a reboot, after reboot log into tty and do 'startx'."
 echo "If for some reason you need to tweak something, answer 'n'. Otherwise, do 'y'."
-read -p "Reboot? (y/n)" answer
+read -p "Reboot? (y/n) " answer
 if [[ "$answer" != 'y' ]]; then
   echo ""
   echo "Make sure to reboot later."

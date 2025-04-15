@@ -1,6 +1,6 @@
 configuration {
   show-icons: true;
   icon-theme: "Papirus-Light";
-  font: "OMORI_GAME 20"
+  font: "OMORI_GAME 20";
 }
 @theme "omori"
