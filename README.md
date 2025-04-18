@@ -81,7 +81,7 @@ Tweak the commands as you will.
 cd miilk-dotfiles
 sudo mv ./OMORI_GAME.ttf /usr/local/share/fonts # Or use cp, safer
 fc-cache # Optionally, also check if it's in there
-cp -rf . ..
+cp -rf . .. # If you want dark theme, rename the dark folder (.config)
 chsh -s "$(which zsh)"
 ```
 
