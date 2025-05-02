@@ -1,0 +1,86 @@
+configuration {
+  display-drun: "Applications:";
+  display-window: "Windows:";
+  drun-display-format: "{icon} {name}";
+  font: "JetBrainsMono Nerd Font Medium 12";
+  modi: "window,run,drun,ssh,calc"; // Added SSH and calculator modes
+  calc-command: "rofi -show calc -modi calc -no-show-match -no-sort"; // Calculator mode
+  show-icons: true;
+  icon-theme: "Papirus";
+}
+
+@theme "/dev/null"
+
+* {
+  bg: #11121D;
+  bg-alt: #A0A8CD;
+
+  fg: #FFFFFF;
+  fg-alt: #424242;
+
+  window-border-color: #4A5057;
+  
+  background-color: @bg;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+  border-radius: 8px;
+  shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+element {
+  padding: 12;
+  text-color: @fg-alt;
+  hover-background-color: lighten(@bg, 10%); // Highlight on hover
+}
+
+element selected {
+  text-color: @fg;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
+}
+
+entry {
+  background-color: @bg-alt;
+  padding: 12;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [entry];
+}
+
+listview {
+  background-color: @bg;
+  columns: 1;
+  lines: 8;
+}
+
+mainbox {
+  background-color: @bg;
+  children: [inputbar, listview];
+}
+
+prompt {
+  background-color: @bg-alt;
+  enabled: true;
+  padding: 12 0 0 12;
+  text-color: @fg;
+}
+
+window {
+  transparency: "real";
+}
+
+keybindings {
+  // Custom keybindings for quick actions
+  "Alt+Tab": "window";
+  "Ctrl+Space": "drun";
+  "Ctrl+Alt+S": "ssh";
+}
