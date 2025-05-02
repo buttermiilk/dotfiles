@@ -36,7 +36,8 @@ I use these packages from `pacman`:
 pacman -Sy --needed i3-wm i3status-rust \
   alacritty fastfetch picom rofi pavucontrol \
   dunst thunar gtk3 xorg xorg-xinit zsh \
-  ttf-jetbrains-mono-nerf btop vim flameshot
+  ttf-jetbrains-mono-nerf btop vim flameshot \
+  redshift brightnessctl
 ```
 and these from the AUR, you can get them using `paru` or `yay`:
 ```
