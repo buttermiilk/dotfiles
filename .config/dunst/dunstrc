@@ -1,0 +1,43 @@
+[global]
+    monitor = 0
+    geometry = "300x5-20+20"
+    padding = 16
+    horizontal_padding = 16
+    frame_width = 2
+    frame_color = "#44475a"
+    separator_height = 2
+    separator_color = "auto"
+
+    font = JetBrainsMono Nerd Font 10
+    line_height = 4
+
+    format = "<b>%s</b>\n%b"
+    markup = full
+
+    transparency = 10
+    corner_radius = 10
+
+    timeout = 5
+    ignore_newline = no
+    word_wrap = yes
+    ellipsize = end
+
+    mouse_left_click = close_current
+    mouse_middle_click = do_action
+    mouse_right_click = close_all
+
+[urgency_low]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    timeout = 3
+
+[urgency_normal]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    timeout = 5
+
+[urgency_critical]
+    background = "#f38ba8"
+    foreground = "#1e1e2e"
+    frame_color = "#f38ba8"
+    timeout = 0

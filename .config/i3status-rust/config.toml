@@ -1,0 +1,29 @@
+theme = "modern"
+icons = "awesome"
+
+[[block]]
+block = "sound"
+format = "VOL {volume}%"
+
+[[block]]
+block = "battery"
+format = "{percentage}%"
+
+[[block]]
+block = "memory"
+format = "RAM {mem_used_perc}%"
+
+[[block]]
+block = "cpu"
+interval = 1
+format = "CPU {utilization}%"
+
+[[block]]
+block = "net"
+device = "wlan0"
+format = "{ssid}"
+
+[[block]]
+block = "time"
+format = "%a %d-%b %H:%M"
+interval = 60
