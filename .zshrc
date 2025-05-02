@@ -16,18 +16,6 @@ ZSH_THEME="candy"
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-# EXPERIMENTAL BLOCK ===================================================
-# Set the font size of this terminal instance
-set_font_size() {
-  local size=${1:-12}  # Default size is 12 if not provided
-  echo -e "\e]50;SetProfile=Default\a"
-  echo -e "\e]710;xft:JetBrainsMono Nerd Font:size=$size\a"
-}
-
-# Set default font size (change the number to your preferred size)
-set_font_size 14
-# ======================================================================
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -120,6 +108,6 @@ alias stab='shutdown now'
 eval "$(ssh-agent -s)"
 
 clear
-echo "Welcome to White Space."
-echo "You have been living here for as long as you can remember."
+echo "Hey there!"
+echo "I'm Yomikawa in a terminal. Work your heart out!"
 echo ""
