@@ -7,7 +7,7 @@ set $mod Mod4
 
 # the 'linux' one is for my Arch installation
 # the other one, 'win', is for my Windows installation but placed in here so I can download it later.
-exec --no-startup-id feh --bg-center ~/wallpapers/linux.jpg
+exec --no-startup-id feh --bg-center ~/.config/wallpapers/linux.jpg
 # picom window compositor
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
 # x11 stuff
