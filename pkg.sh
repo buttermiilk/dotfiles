@@ -1,13 +1,9 @@
-# I just don't like remembering this
-# Testing though, don't rely on it
-pacman -Sy --needed xorg-server xorg-xinit i3 i3status-rust alacritty dunst picom feh zsh git stow noto-fonts noto-fonts-cjk ttf-jetbrains-mono-nerd
+# If you're lazy installing packages
+# Make sure to get yay first
+sudo pacman -Sy --needed i3-wm i3status-rust \
+  alacritty fastfetch picom rofi pavucontrol \
+  dunst thunar gtk3 xorg xorg-xinit zsh \
+  ttf-jetbrains-mono-nerf btop vim flameshot \
+  redshift brightnessctl
+yay -S tty-clock cbonsai zen-browser-bin
 sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
-echo ""
-read -p "Y'testing? Can make you a user for that. (y/n) " answer
-if [["$answer" == 'y']]; then
-  useradd -m test
-  passwd test
-  echo "test ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-  su - test
-fi
-exit 0
